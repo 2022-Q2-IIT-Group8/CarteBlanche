@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		330BEBDE28920B0000D5DA8B /* CarteBlancheApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330BEBDD28920B0000D5DA8B /* CarteBlancheApp.swift */; };
+		330BEBE028920B0000D5DA8B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330BEBDF28920B0000D5DA8B /* ContentView.swift */; };
+		330BEBE228920B0300D5DA8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 330BEBE128920B0300D5DA8B /* Assets.xcassets */; };
+		330BEBE528920B0300D5DA8B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 330BEBE428920B0300D5DA8B /* Preview Assets.xcassets */; };
+		330BEBEF28920B0300D5DA8B /* CarteBlancheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330BEBEE28920B0300D5DA8B /* CarteBlancheTests.swift */; };
+		330BEBF928920B0300D5DA8B /* CarteBlancheUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330BEBF828920B0300D5DA8B /* CarteBlancheUITests.swift */; };
+		330BEBFB28920B0300D5DA8B /* CarteBlancheUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330BEBFA28920B0300D5DA8B /* CarteBlancheUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		330BEBEB28920B0300D5DA8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 330BEBD228920B0000D5DA8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 330BEBD928920B0000D5DA8B;
+			remoteInfo = CarteBlanche;
+		};
+		330BEBF528920B0300D5DA8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 330BEBD228920B0000D5DA8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 330BEBD928920B0000D5DA8B;
+			remoteInfo = CarteBlanche;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		330BEBDA28920B0000D5DA8B /* CarteBlanche.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarteBlanche.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		330BEBDD28920B0000D5DA8B /* CarteBlancheApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarteBlancheApp.swift; sourceTree = "<group>"; };
+		330BEBDF28920B0000D5DA8B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		330BEBE128920B0300D5DA8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		330BEBE428920B0300D5DA8B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		330BEBEA28920B0300D5DA8B /* CarteBlancheTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarteBlancheTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		330BEBEE28920B0300D5DA8B /* CarteBlancheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarteBlancheTests.swift; sourceTree = "<group>"; };
+		330BEBF428920B0300D5DA8B /* CarteBlancheUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarteBlancheUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		330BEBF828920B0300D5DA8B /* CarteBlancheUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarteBlancheUITests.swift; sourceTree = "<group>"; };
+		330BEBFA28920B0300D5DA8B /* CarteBlancheUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarteBlancheUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		330BEBD728920B0000D5DA8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		330BEBE728920B0300D5DA8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		330BEBF128920B0300D5DA8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		330BEBD128920B0000D5DA8B = {
+			isa = PBXGroup;
+			children = (
+				330BEBDC28920B0000D5DA8B /* CarteBlanche */,
+				330BEBED28920B0300D5DA8B /* CarteBlancheTests */,
+				330BEBF728920B0300D5DA8B /* CarteBlancheUITests */,
+				330BEBDB28920B0000D5DA8B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		330BEBDB28920B0000D5DA8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				330BEBDA28920B0000D5DA8B /* CarteBlanche.app */,
+				330BEBEA28920B0300D5DA8B /* CarteBlancheTests.xctest */,
+				330BEBF428920B0300D5DA8B /* CarteBlancheUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		330BEBDC28920B0000D5DA8B /* CarteBlanche */ = {
+			isa = PBXGroup;
+			children = (
+				330BEBDD28920B0000D5DA8B /* CarteBlancheApp.swift */,
+				330BEBDF28920B0000D5DA8B /* ContentView.swift */,
+				330BEBE128920B0300D5DA8B /* Assets.xcassets */,
+				330BEBE328920B0300D5DA8B /* Preview Content */,
+			);
+			path = CarteBlanche;
+			sourceTree = "<group>";
+		};
+		330BEBE328920B0300D5DA8B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				330BEBE428920B0300D5DA8B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		330BEBED28920B0300D5DA8B /* CarteBlancheTests */ = {
+			isa = PBXGroup;
+			children = (
+				330BEBEE28920B0300D5DA8B /* CarteBlancheTests.swift */,
+			);
+			path = CarteBlancheTests;
+			sourceTree = "<group>";
+		};
+		330BEBF728920B0300D5DA8B /* CarteBlancheUITests */ = {
+			isa = PBXGroup;
+			children = (
+				330BEBF828920B0300D5DA8B /* CarteBlancheUITests.swift */,
+				330BEBFA28920B0300D5DA8B /* CarteBlancheUITestsLaunchTests.swift */,
+			);
+			path = CarteBlancheUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		330BEBD928920B0000D5DA8B /* CarteBlanche */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 330BEBFE28920B0300D5DA8B /* Build configuration list for PBXNativeTarget "CarteBlanche" */;
+			buildPhases = (
+				330BEBD628920B0000D5DA8B /* Sources */,
+				330BEBD728920B0000D5DA8B /* Frameworks */,
+				330BEBD828920B0000D5DA8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarteBlanche;
+			productName = CarteBlanche;
+			productReference = 330BEBDA28920B0000D5DA8B /* CarteBlanche.app */;
+			productType = "com.apple.product-type.application";
+		};
+		330BEBE928920B0300D5DA8B /* CarteBlancheTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 330BEC0128920B0300D5DA8B /* Build configuration list for PBXNativeTarget "CarteBlancheTests" */;
+			buildPhases = (
+				330BEBE628920B0300D5DA8B /* Sources */,
+				330BEBE728920B0300D5DA8B /* Frameworks */,
+				330BEBE828920B0300D5DA8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				330BEBEC28920B0300D5DA8B /* PBXTargetDependency */,
+			);
+			name = CarteBlancheTests;
+			productName = CarteBlancheTests;
+			productReference = 330BEBEA28920B0300D5DA8B /* CarteBlancheTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		330BEBF328920B0300D5DA8B /* CarteBlancheUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 330BEC0428920B0300D5DA8B /* Build configuration list for PBXNativeTarget "CarteBlancheUITests" */;
+			buildPhases = (
+				330BEBF028920B0300D5DA8B /* Sources */,
+				330BEBF128920B0300D5DA8B /* Frameworks */,
+				330BEBF228920B0300D5DA8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				330BEBF628920B0300D5DA8B /* PBXTargetDependency */,
+			);
+			name = CarteBlancheUITests;
+			productName = CarteBlancheUITests;
+			productReference = 330BEBF428920B0300D5DA8B /* CarteBlancheUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		330BEBD228920B0000D5DA8B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					330BEBD928920B0000D5DA8B = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					330BEBE928920B0300D5DA8B = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 330BEBD928920B0000D5DA8B;
+					};
+					330BEBF328920B0300D5DA8B = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 330BEBD928920B0000D5DA8B;
+					};
+				};
+			};
+			buildConfigurationList = 330BEBD528920B0000D5DA8B /* Build configuration list for PBXProject "CarteBlanche" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 330BEBD128920B0000D5DA8B;
+			productRefGroup = 330BEBDB28920B0000D5DA8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				330BEBD928920B0000D5DA8B /* CarteBlanche */,
+				330BEBE928920B0300D5DA8B /* CarteBlancheTests */,
+				330BEBF328920B0300D5DA8B /* CarteBlancheUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		330BEBD828920B0000D5DA8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				330BEBE528920B0300D5DA8B /* Preview Assets.xcassets in Resources */,
+				330BEBE228920B0300D5DA8B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		330BEBE828920B0300D5DA8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		330BEBF228920B0300D5DA8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		330BEBD628920B0000D5DA8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				330BEBE028920B0000D5DA8B /* ContentView.swift in Sources */,
+				330BEBDE28920B0000D5DA8B /* CarteBlancheApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		330BEBE628920B0300D5DA8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				330BEBEF28920B0300D5DA8B /* CarteBlancheTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		330BEBF028920B0300D5DA8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				330BEBFB28920B0300D5DA8B /* CarteBlancheUITestsLaunchTests.swift in Sources */,
+				330BEBF928920B0300D5DA8B /* CarteBlancheUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		330BEBEC28920B0300D5DA8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 330BEBD928920B0000D5DA8B /* CarteBlanche */;
+			targetProxy = 330BEBEB28920B0300D5DA8B /* PBXContainerItemProxy */;
+		};
+		330BEBF628920B0300D5DA8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 330BEBD928920B0000D5DA8B /* CarteBlanche */;
+			targetProxy = 330BEBF528920B0300D5DA8B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		330BEBFC28920B0300D5DA8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		330BEBFD28920B0300D5DA8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		330BEBFF28920B0300D5DA8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CarteBlanche/Preview Content\"";
+				DEVELOPMENT_TEAM = JY9Z7YU842;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.skyvelleity.CarteBlanche;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		330BEC0028920B0300D5DA8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CarteBlanche/Preview Content\"";
+				DEVELOPMENT_TEAM = JY9Z7YU842;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.skyvelleity.CarteBlanche;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		330BEC0228920B0300D5DA8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JY9Z7YU842;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.skyvelleity.CarteBlancheTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarteBlanche.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CarteBlanche";
+			};
+			name = Debug;
+		};
+		330BEC0328920B0300D5DA8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JY9Z7YU842;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.skyvelleity.CarteBlancheTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarteBlanche.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CarteBlanche";
+			};
+			name = Release;
+		};
+		330BEC0528920B0300D5DA8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JY9Z7YU842;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.skyvelleity.CarteBlancheUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CarteBlanche;
+			};
+			name = Debug;
+		};
+		330BEC0628920B0300D5DA8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JY9Z7YU842;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.skyvelleity.CarteBlancheUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CarteBlanche;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		330BEBD528920B0000D5DA8B /* Build configuration list for PBXProject "CarteBlanche" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				330BEBFC28920B0300D5DA8B /* Debug */,
+				330BEBFD28920B0300D5DA8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		330BEBFE28920B0300D5DA8B /* Build configuration list for PBXNativeTarget "CarteBlanche" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				330BEBFF28920B0300D5DA8B /* Debug */,
+				330BEC0028920B0300D5DA8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		330BEC0128920B0300D5DA8B /* Build configuration list for PBXNativeTarget "CarteBlancheTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				330BEC0228920B0300D5DA8B /* Debug */,
+				330BEC0328920B0300D5DA8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		330BEC0428920B0300D5DA8B /* Build configuration list for PBXNativeTarget "CarteBlancheUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				330BEC0528920B0300D5DA8B /* Debug */,
+				330BEC0628920B0300D5DA8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 330BEBD228920B0000D5DA8B /* Project object */;
+}
