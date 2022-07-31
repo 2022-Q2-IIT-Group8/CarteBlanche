@@ -20,7 +20,7 @@ struct Ingredient2Recipe: View {
         case "Home":
             Ingredient2Recipe_Home(viewModel: viewModel)
         default:
-            Home(viewModel: viewModel)
+            Ingredient2Recipe_Home(viewModel: viewModel)
         }
     
 
@@ -53,7 +53,7 @@ struct Ingredient2Recipe_Add: View {
             .foregroundColor(viewModel.hasFlour ? Color.green : Color.red)
         Button("Roast Chicken"){viewModel.hasRoastChicken.toggle()}
             .foregroundColor(viewModel.hasRoastChicken ? Color.green : Color.red)
-        Button("hasTofu"){viewModel.hasTofu.toggle()}
+        Button("Tofu"){viewModel.hasTofu.toggle()}
             .foregroundColor(viewModel.hasTofu ? Color.green : Color.red)
         
         Button("Back"){viewModel.ingredientView = "Home"}
