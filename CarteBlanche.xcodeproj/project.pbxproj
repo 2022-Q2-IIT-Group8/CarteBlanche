@@ -38,7 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		330BEBDA28920B0000D5DA8B /* CarteBlanche.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarteBlanche.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		330BEBDA28920B0000D5DA8B /* Gomi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gomi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		330BEBDD28920B0000D5DA8B /* CarteBlancheApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarteBlancheApp.swift; sourceTree = "<group>"; };
 		330BEBDF28920B0000D5DA8B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		330BEBE128920B0300D5DA8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 		330BEBDB28920B0000D5DA8B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				330BEBDA28920B0000D5DA8B /* CarteBlanche.app */,
+				330BEBDA28920B0000D5DA8B /* Gomi.app */,
 				330BEBEA28920B0300D5DA8B /* CarteBlancheTests.xctest */,
 				330BEBF428920B0300D5DA8B /* CarteBlancheUITests.xctest */,
 			);
@@ -150,9 +150,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		330BEBD928920B0000D5DA8B /* CarteBlanche */ = {
+		330BEBD928920B0000D5DA8B /* Gomi */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 330BEBFE28920B0300D5DA8B /* Build configuration list for PBXNativeTarget "CarteBlanche" */;
+			buildConfigurationList = 330BEBFE28920B0300D5DA8B /* Build configuration list for PBXNativeTarget "Gomi" */;
 			buildPhases = (
 				330BEBD628920B0000D5DA8B /* Sources */,
 				330BEBD728920B0000D5DA8B /* Frameworks */,
@@ -162,9 +162,9 @@
 			);
 			dependencies = (
 			);
-			name = CarteBlanche;
+			name = Gomi;
 			productName = CarteBlanche;
-			productReference = 330BEBDA28920B0000D5DA8B /* CarteBlanche.app */;
+			productReference = 330BEBDA28920B0000D5DA8B /* Gomi.app */;
 			productType = "com.apple.product-type.application";
 		};
 		330BEBE928920B0300D5DA8B /* CarteBlancheTests */ = {
@@ -239,7 +239,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				330BEBD928920B0000D5DA8B /* CarteBlanche */,
+				330BEBD928920B0000D5DA8B /* Gomi */,
 				330BEBE928920B0300D5DA8B /* CarteBlancheTests */,
 				330BEBF328920B0300D5DA8B /* CarteBlancheUITests */,
 			);
@@ -308,12 +308,12 @@
 /* Begin PBXTargetDependency section */
 		330BEBEC28920B0300D5DA8B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 330BEBD928920B0000D5DA8B /* CarteBlanche */;
+			target = 330BEBD928920B0000D5DA8B /* Gomi */;
 			targetProxy = 330BEBEB28920B0300D5DA8B /* PBXContainerItemProxy */;
 		};
 		330BEBF628920B0300D5DA8B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 330BEBD928920B0000D5DA8B /* CarteBlanche */;
+			target = 330BEBD928920B0000D5DA8B /* Gomi */;
 			targetProxy = 330BEBF528920B0300D5DA8B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -581,7 +581,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		330BEBFE28920B0300D5DA8B /* Build configuration list for PBXNativeTarget "CarteBlanche" */ = {
+		330BEBFE28920B0300D5DA8B /* Build configuration list for PBXNativeTarget "Gomi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				330BEBFF28920B0300D5DA8B /* Debug */,

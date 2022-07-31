@@ -36,7 +36,8 @@ struct Home: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Let's recycle!")
+            Text("Gomi\n")
+                .font(.title)
             Button("Ingredients to Recipe Finder!"){viewModel.currentView = "Ingredient2Recipe"}
             Button("Recycling Map!"){viewModel.currentView = "RecycleMap"}
             Button("Council Bin Calendar!"){viewModel.currentView = "RecycleCalendar"}
