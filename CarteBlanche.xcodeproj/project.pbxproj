@@ -14,6 +14,10 @@
 		330BEBEF28920B0300D5DA8B /* CarteBlancheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330BEBEE28920B0300D5DA8B /* CarteBlancheTests.swift */; };
 		330BEBF928920B0300D5DA8B /* CarteBlancheUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330BEBF828920B0300D5DA8B /* CarteBlancheUITests.swift */; };
 		330BEBFB28920B0300D5DA8B /* CarteBlancheUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330BEBFA28920B0300D5DA8B /* CarteBlancheUITestsLaunchTests.swift */; };
+		330BEC092892147600D5DA8B /* Ingredient2Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330BEC082892147600D5DA8B /* Ingredient2Recipe.swift */; };
+		330BEC0B2892148700D5DA8B /* RecycleMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330BEC0A2892148700D5DA8B /* RecycleMap.swift */; };
+		330BEC0D289214A800D5DA8B /* RecycleCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330BEC0C289214A800D5DA8B /* RecycleCalendar.swift */; };
+		330BEC0F289217E300D5DA8B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330BEC0E289217E300D5DA8B /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		330BEBF428920B0300D5DA8B /* CarteBlancheUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarteBlancheUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		330BEBF828920B0300D5DA8B /* CarteBlancheUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarteBlancheUITests.swift; sourceTree = "<group>"; };
 		330BEBFA28920B0300D5DA8B /* CarteBlancheUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarteBlancheUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		330BEC082892147600D5DA8B /* Ingredient2Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient2Recipe.swift; sourceTree = "<group>"; };
+		330BEC0A2892148700D5DA8B /* RecycleMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycleMap.swift; sourceTree = "<group>"; };
+		330BEC0C289214A800D5DA8B /* RecycleCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycleCalendar.swift; sourceTree = "<group>"; };
+		330BEC0E289217E300D5DA8B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +104,8 @@
 			children = (
 				330BEBDD28920B0000D5DA8B /* CarteBlancheApp.swift */,
 				330BEBDF28920B0000D5DA8B /* ContentView.swift */,
+				330BEC0E289217E300D5DA8B /* ViewModel.swift */,
+				330BEC072892144200D5DA8B /* Views */,
 				330BEBE128920B0300D5DA8B /* Assets.xcassets */,
 				330BEBE328920B0300D5DA8B /* Preview Content */,
 			);
@@ -125,6 +135,16 @@
 				330BEBFA28920B0300D5DA8B /* CarteBlancheUITestsLaunchTests.swift */,
 			);
 			path = CarteBlancheUITests;
+			sourceTree = "<group>";
+		};
+		330BEC072892144200D5DA8B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				330BEC082892147600D5DA8B /* Ingredient2Recipe.swift */,
+				330BEC0A2892148700D5DA8B /* RecycleMap.swift */,
+				330BEC0C289214A800D5DA8B /* RecycleCalendar.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +277,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				330BEC0B2892148700D5DA8B /* RecycleMap.swift in Sources */,
+				330BEC0D289214A800D5DA8B /* RecycleCalendar.swift in Sources */,
+				330BEC092892147600D5DA8B /* Ingredient2Recipe.swift in Sources */,
 				330BEBE028920B0000D5DA8B /* ContentView.swift in Sources */,
+				330BEC0F289217E300D5DA8B /* ViewModel.swift in Sources */,
 				330BEBDE28920B0000D5DA8B /* CarteBlancheApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
