@@ -18,6 +18,7 @@
 		330BEC0B2892148700D5DA8B /* RecycleMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330BEC0A2892148700D5DA8B /* RecycleMap.swift */; };
 		330BEC0D289214A800D5DA8B /* RecycleCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330BEC0C289214A800D5DA8B /* RecycleCalendar.swift */; };
 		330BEC0F289217E300D5DA8B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330BEC0E289217E300D5DA8B /* ViewModel.swift */; };
+		33F4E7472899AF2000014DA5 /* RecycleMap_Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F4E7462899AF2000014DA5 /* RecycleMap_Map.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		330BEC0A2892148700D5DA8B /* RecycleMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycleMap.swift; sourceTree = "<group>"; };
 		330BEC0C289214A800D5DA8B /* RecycleCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycleCalendar.swift; sourceTree = "<group>"; };
 		330BEC0E289217E300D5DA8B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		33F4E7462899AF2000014DA5 /* RecycleMap_Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycleMap_Map.swift; sourceTree = "<group>"; };
+		33F4E7482899B4BD00014DA5 /* Gomi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Gomi-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,7 @@
 		330BEBD128920B0000D5DA8B = {
 			isa = PBXGroup;
 			children = (
+				33F4E7482899B4BD00014DA5 /* Gomi-Info.plist */,
 				330BEBDC28920B0000D5DA8B /* CarteBlanche */,
 				330BEBED28920B0300D5DA8B /* CarteBlancheTests */,
 				330BEBF728920B0300D5DA8B /* CarteBlancheUITests */,
@@ -140,11 +144,20 @@
 		330BEC072892144200D5DA8B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				33F4E7432899AB9700014DA5 /* MapStuff */,
 				330BEC082892147600D5DA8B /* Ingredient2Recipe.swift */,
 				330BEC0A2892148700D5DA8B /* RecycleMap.swift */,
 				330BEC0C289214A800D5DA8B /* RecycleCalendar.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		33F4E7432899AB9700014DA5 /* MapStuff */ = {
+			isa = PBXGroup;
+			children = (
+				33F4E7462899AF2000014DA5 /* RecycleMap_Map.swift */,
+			);
+			path = MapStuff;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				330BEC0B2892148700D5DA8B /* RecycleMap.swift in Sources */,
+				33F4E7472899AF2000014DA5 /* RecycleMap_Map.swift in Sources */,
 				330BEC0D289214A800D5DA8B /* RecycleCalendar.swift in Sources */,
 				330BEC092892147600D5DA8B /* Ingredient2Recipe.swift in Sources */,
 				330BEBE028920B0000D5DA8B /* ContentView.swift in Sources */,
@@ -444,6 +458,7 @@
 				DEVELOPMENT_TEAM = JY9Z7YU842;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Gomi-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -474,6 +489,7 @@
 				DEVELOPMENT_TEAM = JY9Z7YU842;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Gomi-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

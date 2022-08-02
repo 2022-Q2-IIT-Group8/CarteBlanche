@@ -23,8 +23,8 @@ class ViewModel: ObservableObject{
    
     @Published var recycleMapView = "Home"
     
-    @Published var hasEWaste = false
+    @Published var hasEWaste = true
     @Published var hasBottles = false
     @Published var hasCardboard = false
-    @Published var hasBatteries = false
+    @Published var hasBatteries = true
 }

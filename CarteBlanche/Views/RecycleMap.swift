@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import MapKit
+
 
 struct RecycleMap: View {
     @ObservedObject var viewModel: ViewModel
@@ -19,8 +21,6 @@ struct RecycleMap: View {
             RecycleMap_Locations(viewModel: viewModel)
         case "Home":
             RecycleMap_Home(viewModel: viewModel)
-        case "Mockup":
-            RecycleMap_MapMockup(viewModel: viewModel)
         default:
             RecycleMap_Home(viewModel: viewModel)
         }
@@ -39,7 +39,6 @@ struct RecycleMap_Home: View {
             Button("Add Waste"){viewModel.recycleMapView = "Add"}
             Button("Waste List"){viewModel.recycleMapView = "List"}
             Button("Recycle Locations"){viewModel.recycleMapView = "Locations"}
-            Button("Map Mockup"){viewModel.recycleMapView = "Mockup"}
             Button("Back"){viewModel.currentView = "Home"}
             
         }
@@ -91,80 +90,94 @@ struct RecycleMap_List: View {
 
 struct RecycleMap_Locations: View {
     @ObservedObject var viewModel: ViewModel
-    var body: some View {
-        Text("Here are some locations where you can recycle your items:\n")
-            .multilineTextAlignment(.center)
-
-        if (viewModel.hasEWaste || viewModel.hasBottles || viewModel.hasCardboard || viewModel.hasBatteries){
-            Text("You can recycle all of the following at the Nillumbik Recycling Centre:")
-                .multilineTextAlignment(.center)
-            if (viewModel.hasEWaste){
-                Text("💻 E-waste")
-            }
-            if (viewModel.hasBottles){
-                Text("🧃 Bottles")
-            }
-            if (viewModel.hasCardboard){
-                Text("📜 Cardboard")
-            }
-            if (viewModel.hasBatteries){
-                Text("🪫 Batteries")
-            }
-
-        }
-
-        if (viewModel.hasBatteries){
-            Text("\nYou can recycle your batteries at your local Woolworths Supermarket.")
-                .multilineTextAlignment(.center)
-        }
-
-        if (viewModel.hasBatteries || viewModel.hasEWaste){
-            Text("\nYou can recycle the following small items at the Eltham Library:")
-                .multilineTextAlignment(.center)
-            if (viewModel.hasEWaste){
-                Text("💻 Small E-waste Items")
-            }
-            if (viewModel.hasBatteries){
-                Text("🪫 Batteries")
-            }
-        }
-
-        Text("\n")
-        Button("Back"){viewModel.recycleMapView = "Home"}
-
-    }
-}
-
-
-
-
-
-
-
-struct RecycleMap_MapMockup: View {
-    @ObservedObject var viewModel: ViewModel
-    var body: some View {
-        Text("Here are some locations where you can recycle your items:\n")
-            .multilineTextAlignment(.center)
-        
-        
-
-        Text("Select which items you would like to see on the map:")
-                .multilineTextAlignment(.center)
-            Text("💻 E-waste")
-            Text("🧃 Bottles")
-            Text("📜 Cardboard")
-            Text("🪫 Batteries")
-            Image("Mockup")
-
-        
-
+    @State var subviewSwitcher = 0
     
-        Text("\n")
-        Button("Back"){viewModel.recycleMapView = "Home"}
-
+    var body: some View {
+        VStack{
+            Button("Back"){viewModel.recycleMapView = "Home"}
+            Picker(selection: $subviewSwitcher, label: Text(""), content: {
+                Text("Map").tag(0)
+                Text("List").tag(1)
+            }).pickerStyle(SegmentedPickerStyle())
+            
+            if subviewSwitcher == 1 {
+                Text("Here are some locations where you can recycle your items:\n")
+                    .multilineTextAlignment(.center)
+                Spacer()
+                if (viewModel.hasEWaste || viewModel.hasBottles || viewModel.hasCardboard || viewModel.hasBatteries){
+                    Button("You can recycle all of the following at the Nillumbik Recycling Centre:")
+                    {
+                        let latitude = -37.65445841223325
+                        let longitude = 145.12588789390205
+                        let url = URL(string: "maps://?saddr=&daddr=\(latitude),\(longitude)")
+                        if UIApplication.shared.canOpenURL(url!) {
+                            UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+                        }
+                    }
+                    .multilineTextAlignment(.center)
+                    
+                    if (viewModel.hasEWaste){
+                        Text("💻 E-waste")
+                    }
+                    if (viewModel.hasBottles){
+                        Text("🧃 Bottles")
+                    }
+                    if (viewModel.hasCardboard){
+                        Text("📜 Cardboard")
+                    }
+                    if (viewModel.hasBatteries){
+                        Text("🪫 Batteries")
+                    }
+                    
+                }
+                
+                if (viewModel.hasBatteries){
+                    Button("\nYou can recycle your batteries at your local Woolworths Supermarket.")
+                    {
+                        let latitude = -37.71403012349992
+                        let longitude = 145.14990344750103
+                        let url = URL(string: "maps://?saddr=&daddr=\(latitude),\(longitude)")
+                        if UIApplication.shared.canOpenURL(url!) {
+                            UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+                        }
+                    }
+                    .multilineTextAlignment(.center)
+                }
+                
+                if (viewModel.hasBatteries || viewModel.hasEWaste){
+                    Button("\nYou can recycle the following small items at the Eltham Library:")
+                    {
+                        let latitude = -37.71618382924889
+                        let longitude = 145.14595414465242
+                        let url = URL(string: "maps://?saddr=&daddr=\(latitude),\(longitude)")
+                        if UIApplication.shared.canOpenURL(url!) {
+                            UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+                        }
+                    }
+                    
+                    .multilineTextAlignment(.center)
+                    if (viewModel.hasEWaste){
+                        Text("💻 Small E-waste Items")
+                    }
+                    if (viewModel.hasBatteries){
+                        Text("🪫 Batteries")
+                    }
+                }
+                
+                Spacer()
+                
+            }
+        }
+        if subviewSwitcher == 0 {
+            RecycleMap_Map(viewModel: viewModel)
+        }
     }
 }
+
+
+
+
+
 
 
 
