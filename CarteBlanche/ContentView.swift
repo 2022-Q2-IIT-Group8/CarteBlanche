@@ -33,9 +33,9 @@ struct Home: View {
     var viewModel: ViewModel
     var body: some View {
         VStack{
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
+            Image(uiImage: UIImage(named: "AppIcon") ?? UIImage())
+                .resizable()
+                .frame(width: 64, height: 64)
             Text("Gomi\n")
                 .font(.title)
             Button("Ingredients to Recipe Finder!"){viewModel.currentView = "Ingredient2Recipe"}

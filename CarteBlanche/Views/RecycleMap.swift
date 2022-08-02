@@ -19,6 +19,8 @@ struct RecycleMap: View {
             RecycleMap_Locations(viewModel: viewModel)
         case "Home":
             RecycleMap_Home(viewModel: viewModel)
+        case "Mockup":
+            RecycleMap_MapMockup(viewModel: viewModel)
         default:
             RecycleMap_Home(viewModel: viewModel)
         }
@@ -37,6 +39,7 @@ struct RecycleMap_Home: View {
             Button("Add Waste"){viewModel.recycleMapView = "Add"}
             Button("Waste List"){viewModel.recycleMapView = "List"}
             Button("Recycle Locations"){viewModel.recycleMapView = "Locations"}
+            Button("Map Mockup"){viewModel.recycleMapView = "Mockup"}
             Button("Back"){viewModel.currentView = "Home"}
             
         }
@@ -91,7 +94,7 @@ struct RecycleMap_Locations: View {
     var body: some View {
         Text("Here are some locations where you can recycle your items:\n")
             .multilineTextAlignment(.center)
-        
+
         if (viewModel.hasEWaste || viewModel.hasBottles || viewModel.hasCardboard || viewModel.hasBatteries){
             Text("You can recycle all of the following at the Nillumbik Recycling Centre:")
                 .multilineTextAlignment(.center)
@@ -107,14 +110,14 @@ struct RecycleMap_Locations: View {
             if (viewModel.hasBatteries){
                 Text("🪫 Batteries")
             }
-            
+
         }
-        
+
         if (viewModel.hasBatteries){
             Text("\nYou can recycle your batteries at your local Woolworths Supermarket.")
                 .multilineTextAlignment(.center)
         }
-        
+
         if (viewModel.hasBatteries || viewModel.hasEWaste){
             Text("\nYou can recycle the following small items at the Eltham Library:")
                 .multilineTextAlignment(.center)
@@ -125,10 +128,41 @@ struct RecycleMap_Locations: View {
                 Text("🪫 Batteries")
             }
         }
-        
+
         Text("\n")
         Button("Back"){viewModel.recycleMapView = "Home"}
-            
+
+    }
+}
+
+
+
+
+
+
+
+struct RecycleMap_MapMockup: View {
+    @ObservedObject var viewModel: ViewModel
+    var body: some View {
+        Text("Here are some locations where you can recycle your items:\n")
+            .multilineTextAlignment(.center)
+        
+        
+
+        Text("Select which items you would like to see on the map:")
+                .multilineTextAlignment(.center)
+            Text("💻 E-waste")
+            Text("🧃 Bottles")
+            Text("📜 Cardboard")
+            Text("🪫 Batteries")
+            Image("Mockup")
+
+        
+
+    
+        Text("\n")
+        Button("Back"){viewModel.recycleMapView = "Home"}
+
     }
 }
 
