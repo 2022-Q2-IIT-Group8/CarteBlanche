@@ -27,4 +27,7 @@ class ViewModel: ObservableObject{
     @Published var hasBottles = false
     @Published var hasCardboard = false
     @Published var hasBatteries = true
+    
+    let frameSize: CGFloat = 120
+    
 }

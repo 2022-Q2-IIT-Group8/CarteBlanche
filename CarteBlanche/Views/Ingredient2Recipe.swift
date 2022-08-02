@@ -34,10 +34,54 @@ struct Ingredient2Recipe_Home: View {
     var body: some View {
         VStack{
             Text("Ingredient2Recipe!")
-            Button("Add Ingredients"){viewModel.ingredientView = "Add"}
-            Button("Ingredients List"){viewModel.ingredientView = "List"}
-            Button("Recipes"){viewModel.ingredientView = "Recipes"}
-            Button("Back"){viewModel.currentView = "Home"}
+            HStack{
+                Button("Add Ingredients"){withAnimation(){viewModel.ingredientView = "Add"}}
+                    .frame(width: viewModel.frameSize, height: viewModel.frameSize)
+                    .font(.system(size: 18))
+                    .padding()
+                    .foregroundColor(.white)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 25)
+                            .stroke(Color.white, lineWidth: 2)
+                    )
+                    .background(Color.gray)
+                    .cornerRadius(25)
+                Button("Ingredients List"){withAnimation(){viewModel.ingredientView = "List"}}
+                    .frame(width: viewModel.frameSize, height: viewModel.frameSize)
+                    .font(.system(size: 18))
+                    .padding()
+                    .foregroundColor(.white)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 25)
+                            .stroke(Color.white, lineWidth: 2)
+                    )
+                    .background(Color.gray)
+                    .cornerRadius(25)
+            }
+            HStack{
+                Button("Recipes"){withAnimation(){viewModel.ingredientView = "Recipes"}}
+                    .frame(width: viewModel.frameSize, height: viewModel.frameSize)
+                    .font(.system(size: 18))
+                    .padding()
+                    .foregroundColor(.white)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 25)
+                            .stroke(Color.white, lineWidth: 2)
+                    )
+                    .background(Color.gray)
+                    .cornerRadius(25)
+                Button("Back"){withAnimation(){viewModel.currentView = "Home"}}
+                    .frame(width: viewModel.frameSize, height: viewModel.frameSize)
+                    .font(.system(size: 18))
+                    .padding()
+                    .foregroundColor(.white)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 25)
+                            .stroke(Color.white, lineWidth: 2)
+                    )
+                    .background(Color.gray)
+                    .cornerRadius(25)
+            }
             
         }
     }
@@ -56,7 +100,7 @@ struct Ingredient2Recipe_Add: View {
         Button("Tofu"){viewModel.hasTofu.toggle()}
             .foregroundColor(viewModel.hasTofu ? Color.green : Color.red)
         
-        Button("Back"){viewModel.ingredientView = "Home"}
+        Button("Back"){withAnimation(){viewModel.ingredientView = "Home"}}
             
     }
 }
@@ -80,7 +124,7 @@ struct Ingredient2Recipe_List: View {
             Text("🧈 Tofu")
         }
         Text("\n")
-        Button("Back"){viewModel.ingredientView = "Home"}
+        Button("Back"){withAnimation(){viewModel.ingredientView = "Home"}}
             
     }
 }
@@ -117,7 +161,7 @@ struct Ingredient2Recipe_Recipes: View {
         }
         
         Text("\n")
-        Button("Back"){viewModel.ingredientView = "Home"}
+        Button("Back"){withAnimation(){viewModel.ingredientView = "Home"}}
             
     }
 }

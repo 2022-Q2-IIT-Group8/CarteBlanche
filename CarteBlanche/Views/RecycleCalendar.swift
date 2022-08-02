@@ -9,9 +9,18 @@ import SwiftUI
 
 struct RecycleCalendar: View {
     var viewModel: ViewModel
+    @State private var date = Date()
+    
     var body: some View {
-        Text("RecycleCalendar!")
-        Button("Back"){viewModel.currentView = "Home"}
+        Text("View your next collection dates:")
+        DatePicker(
+            "",
+            selection: $date,
+            displayedComponents: [.date]
+        )
+        .datePickerStyle(.graphical)
+
+        Button("Back"){withAnimation(){viewModel.currentView = "Home"}}
     }
 }
 //
